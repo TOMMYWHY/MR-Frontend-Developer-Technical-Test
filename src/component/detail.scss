@@ -1,0 +1,105 @@
+$fontColorDark:#222222;
+$fontColorLight:#888888;
+
+.button-color-light {
+    // background-color: $fontColorLight;
+    // border-color: $fontColorLight;
+
+   
+    &:hover, &:focus {
+    //   background-color: #3a3939;
+      border-color: $fontColorLight;
+    }
+   
+    &:active, &.active {
+      background-color: $fontColorLight;
+      border-color: $fontColorLight;
+    }
+  }
+
+
+.button-color-dark {
+    background-color: $fontColorDark;
+    border-color: $fontColorDark;
+
+
+    &:hover, &:focus {
+        background-color: white;
+        border-color: $fontColorDark;
+        span{ color: $fontColorDark !important;}
+        color: $fontColorDark;
+    }
+
+    &:active, &.active {
+        background-color: $fontColorDark;
+}
+}
+
+.cart-btn{
+    background-color: #F6F6F7;
+    span{color:$fontColorLight}
+    border: none;
+    &:hover, &:focus {
+        background-color: white;
+        border-color: $fontColorDark;
+        span{ color: $fontColorDark !important;}
+        color: $fontColorDark;
+    }
+
+    &:active, &.active {
+        background-color: $fontColorDark;
+    }
+}
+.cart-list{
+    width: 300px;
+    img{width: 100%;}
+}
+  
+
+.ant-layout-header,.ant-menu{
+    background-color: #F6F6F7;
+    color:$fontColorLight;
+    text-align: right;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover{
+    color: $fontColorDark;
+    // border-bottom: 2px solid $fontColorDark;
+    border: none;
+    }
+
+
+
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+    height: 100vh;
+    // background-color: pink;
+  }
+
+.left-img{
+    image{border-radius:1px solid #CCCCCC ;}
+}
+
+.right-info{
+    h1{font-size: 1.6rem; color: $fontColorDark;}
+    h3{font-weight: bolder;}
+    p{color: $fontColorLight;}
+    hr{
+        //  background-color: $fontColorLight; height:1px
+        height: 1px; border: none; background-color: rgb(211, 211, 211);
+        }
+    .product-size{
+        color: $fontColorLight;
+        span{color: red; font-size: 0.8rem;}
+        Button{margin-right: 10px;
+            span{ color: $fontColorLight;}
+        }
+        .button-color-dark {
+            span{color:white;}
+            padding: 0 22px;
+        }
+    }
+}
+
+
